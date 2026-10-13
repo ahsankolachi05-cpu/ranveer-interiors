@@ -1,0 +1,1513 @@
+<!doctype html>
+<html lang="en-GB">
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover" />
+    <meta name="color-scheme" content="light dark" />
+    <meta name="description" content="Ranveer — thoughtfully selected kitchens, bathrooms, appliances, worktops, taps, wall & floor tiles and LVT flooring for modern British living." />
+    <link rel="icon" href="data:," />
+    <title>Ranveer — Kitchens, Bathrooms &amp; Interiors, Thoughtfully Selected</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond:ital,wght@0,300;0,400;0,500;0,600;1,300;1,400;1,500&family=Manrope:wght@300;400;500;600;700&display=swap" rel="stylesheet" />
+    <script type="application/ld+json">
+    {"@context":"https://schema.org","@type":"Organization","name":"Ranveer","description":"Kitchens, bathrooms, appliances, worktops, taps, wall and floor tiles and LVT flooring, thoughtfully selected for modern British living."}
+    </script>
+    <style>
+      :root{
+        --ivory:#F6F3ED;
+        --ivory-deep:#EFE9DD;
+        --paper:#FCFAF6;
+        --espresso:#292720;
+        --espresso-deep:#1E1C17;
+        --ink:#292720;
+        --ink-soft:#57534A;
+        --olive:#777B62;
+        --olive-deep:#5E6249;
+        --stone:#DDD6CA;
+        --brass:#A4834F;
+        --brass-soft:#C2A678;
+        --line:rgba(41,39,32,.14);
+        --line-soft:rgba(41,39,32,.08);
+        --bg:var(--ivory);
+        --surface:var(--paper);
+        --serif:"Cormorant Garamond",Georgia,"Times New Roman",serif;
+        --sans:"Manrope",-apple-system,"Segoe UI",Helvetica,Arial,sans-serif;
+        --ease:cubic-bezier(.22,.61,.21,1);
+        --ease-luxe:cubic-bezier(.16,1,.3,1);
+        --header-h:76px;
+        --topbar-h:34px;
+        --gutter:clamp(20px,4.5vw,72px);
+        --maxw:1560px;
+      }
+      @media (prefers-color-scheme:dark){
+        :root{
+          --bg:#211F1A;
+          --surface:#292720;
+          --ink:#F1ECE2;
+          --ink-soft:#C9C2B2;
+          --line:rgba(246,243,237,.16);
+          --line-soft:rgba(246,243,237,.09);
+          --ivory-deep:#2C2921;
+          --stone:#4A463C;
+          --olive:#9BA184;
+          --olive-deep:#B4B99E;
+        }
+      }
+      *{box-sizing:border-box}
+      html{scroll-behavior:smooth;scroll-padding-top:calc(var(--header-h) + 18px)}
+      html,body{overflow-x:clip}
+      body{
+        margin:0;background:var(--bg);color:var(--ink);
+        font-family:var(--sans);font-size:16px;line-height:1.6;
+        -webkit-font-smoothing:antialiased;text-rendering:optimizeLegibility;
+      }
+      ::selection{background:var(--olive);color:#F6F3ED}
+      img{display:block;max-width:100%}
+      a{color:inherit}
+      button{font-family:inherit;cursor:pointer}
+      :focus-visible{outline:2px solid var(--brass);outline-offset:3px;border-radius:2px}
+      .skip-link{
+        position:fixed;top:-60px;left:16px;z-index:200;background:var(--espresso);color:#F6F3ED;
+        padding:10px 18px;font-size:13px;letter-spacing:.08em;text-decoration:none;transition:top .3s var(--ease);
+      }
+      .skip-link:focus{top:12px}
+
+      /* ---------- Type helpers ---------- */
+      .eyebrow{
+        font-size:11px;font-weight:600;letter-spacing:.34em;text-transform:uppercase;
+        color:var(--olive-deep);margin:0 0 22px;display:flex;align-items:center;gap:14px;
+      }
+      .eyebrow::before{content:"";width:38px;height:1px;background:var(--brass);flex:none}
+      .eyebrow.on-dark{color:var(--brass-soft)}
+      h1,h2,h3{font-family:var(--serif);font-weight:500;line-height:1.06;margin:0;letter-spacing:.005em}
+      .h-display{font-size:clamp(2.9rem,6.2vw,5.6rem);font-weight:400}
+      .h-section{font-size:clamp(2.1rem,4.2vw,3.6rem);font-weight:400}
+      .h-section em,.h-display em{font-style:italic;font-weight:400;color:var(--olive-deep)}
+      .lede{font-size:clamp(1rem,1.25vw,1.13rem);line-height:1.75;color:var(--ink-soft);font-weight:400;max-width:56ch}
+      .wrap{max-width:var(--maxw);margin:0 auto;padding-left:var(--gutter);padding-right:var(--gutter)}
+      .section{padding:clamp(84px,10vw,150px) 0}
+      .section-head{max-width:760px;margin-bottom:clamp(44px,5vw,72px)}
+      .section-head .lede{margin-top:20px}
+
+      /* ---------- Buttons ---------- */
+      .btn{
+        display:inline-flex;align-items:center;gap:12px;text-decoration:none;
+        font-size:12px;font-weight:600;letter-spacing:.22em;text-transform:uppercase;
+        padding:17px 30px;border:1px solid transparent;position:relative;
+        transition:background-color .45s var(--ease),color .45s var(--ease),border-color .45s var(--ease);
+        white-space:nowrap;
+      }
+      .btn .arr{transition:transform .45s var(--ease);font-size:13px;line-height:1}
+      .btn:hover .arr,.btn:focus-visible .arr{transform:translateX(5px)}
+      .btn-solid{background:var(--espresso);color:#F6F3ED}
+      .btn-solid:hover{background:var(--olive-deep)}
+      .btn-brass{background:var(--brass);color:#FFFDF8}
+      .btn-brass:hover{background:var(--espresso)}
+      .btn-ghost{border-color:rgba(246,243,237,.55);color:#F6F3ED;background:transparent}
+      .btn-ghost:hover{background:rgba(246,243,237,.14);border-color:#F6F3ED}
+      .btn-outline{border-color:var(--ink);color:var(--ink);background:transparent}
+      .btn-outline:hover{background:var(--ink);color:var(--bg)}
+      .text-link{
+        display:inline-flex;align-items:center;gap:10px;text-decoration:none;
+        font-size:12px;font-weight:600;letter-spacing:.22em;text-transform:uppercase;color:var(--ink);
+        padding-bottom:6px;border-bottom:1px solid var(--brass);
+        transition:color .3s var(--ease),border-color .3s var(--ease);
+      }
+      .text-link .arr{transition:transform .4s var(--ease)}
+      .text-link:hover{color:var(--olive-deep)}
+      .text-link:hover .arr{transform:translateX(5px)}
+
+      /* ---------- Reveal ---------- */
+      .rv{opacity:0;transform:translateY(26px);transition:opacity .9s var(--ease-luxe),transform .9s var(--ease-luxe)}
+      .rv.d1{transition-delay:.08s}.rv.d2{transition-delay:.16s}.rv.d3{transition-delay:.24s}.rv.d4{transition-delay:.32s}
+      .rv.in{opacity:1;transform:none}
+      .rv-img{clip-path:inset(0 0 100% 0);transition:clip-path 1.15s var(--ease-luxe)}
+      .rv-img.in{clip-path:inset(0 0 0 0)}
+
+      /* ================= HEADER ================= */
+      .site-head{position:fixed;inset:0 0 auto 0;z-index:120}
+      .topbar{
+        background:var(--espresso-deep);color:#E9E3D5;height:var(--topbar-h);
+        display:flex;align-items:center;overflow:hidden;
+        transition:margin-top .5s var(--ease),opacity .4s var(--ease);
+      }
+      .topbar-in{
+        width:100%;max-width:var(--maxw);margin:0 auto;padding:0 var(--gutter);
+        display:flex;align-items:center;justify-content:space-between;gap:20px;
+      }
+      .topbar p{margin:0;font-size:10px;font-weight:600;letter-spacing:.3em;text-transform:uppercase;white-space:nowrap;overflow:hidden;text-overflow:ellipsis}
+      .topbar a{
+        color:var(--brass-soft);text-decoration:none;font-size:10px;font-weight:600;
+        letter-spacing:.26em;text-transform:uppercase;white-space:nowrap;
+        display:inline-flex;gap:7px;align-items:center;transition:color .3s;
+      }
+      .topbar a:hover{color:#F6F3ED}
+      .topbar a .arr{transition:transform .35s var(--ease)}
+      .topbar a:hover .arr{transform:translate(2px,-2px)}
+      .mainbar{
+        transition:background-color .55s var(--ease),box-shadow .55s var(--ease),border-color .55s var(--ease);
+        border-bottom:1px solid transparent;color:#F6F3ED;
+      }
+      .site-head.scrolled .topbar{margin-top:calc(var(--topbar-h) * -1);opacity:0}
+      .site-head.scrolled .mainbar{
+        background:color-mix(in srgb,var(--bg) 92%,transparent);
+        -webkit-backdrop-filter:blur(14px);backdrop-filter:blur(14px);
+        color:var(--ink);border-bottom-color:var(--line-soft);
+        box-shadow:0 12px 40px rgba(30,28,23,.07);
+      }
+      .mainbar-in{
+        max-width:var(--maxw);margin:0 auto;padding:0 var(--gutter);
+        height:var(--header-h);display:flex;align-items:center;justify-content:space-between;gap:18px;
+      }
+      /* Logo */
+      .logo{display:flex;align-items:center;gap:14px;text-decoration:none;flex:none;opacity:0;animation:headIn .9s var(--ease-luxe) .15s forwards}
+      .logo-mark{
+        width:46px;height:46px;flex:none;display:grid;place-items:center;
+        border:1px solid currentColor;position:relative;
+      }
+      .logo-mark::after{content:"";position:absolute;inset:4px;border:1px solid var(--brass);opacity:.65}
+      .logo-mark span{font-family:var(--serif);font-size:17px;font-weight:600;letter-spacing:.06em;line-height:1;padding-top:2px}
+      .logo-word{display:flex;flex-direction:column;line-height:1}
+      .logo-word b{font-family:var(--serif);font-weight:600;font-size:21px;letter-spacing:.2em}
+      .logo-word small{font-size:8px;font-weight:600;letter-spacing:.34em;text-transform:uppercase;opacity:.75;margin-top:4px;white-space:nowrap}
+      /* Nav */
+      .mainnav{display:flex;align-items:center;justify-content:center;flex:1;min-width:0;gap:clamp(10px,1.15vw,20px)}
+      .mainnav .nav-item{opacity:0;animation:headIn .9s var(--ease-luxe) forwards}
+      .mainnav .nav-item:nth-child(1){animation-delay:.28s}.mainnav .nav-item:nth-child(2){animation-delay:.36s}
+      .mainnav .nav-item:nth-child(3){animation-delay:.44s}.mainnav .nav-item:nth-child(4){animation-delay:.52s}
+      .mainnav .nav-item:nth-child(5){animation-delay:.6s}.mainnav .nav-item:nth-child(6){animation-delay:.68s}
+      @keyframes headIn{from{opacity:0;transform:translateY(-10px)}to{opacity:1;transform:none}}
+      .nav-link,.nav-btn{
+        position:relative;background:none;border:0;color:inherit;text-decoration:none;
+        font-size:10.5px;font-weight:600;letter-spacing:.15em;text-transform:uppercase;white-space:nowrap;
+        padding:10px 1px;display:inline-flex;align-items:center;gap:5px;
+      }
+      .nav-link::after,.nav-btn::after{
+        content:"";position:absolute;left:0;right:0;bottom:2px;height:1px;background:var(--brass);
+        transform:scaleX(0);transform-origin:right;transition:transform .5s var(--ease-luxe);
+      }
+      .nav-link:hover::after,.nav-btn:hover::after,.nav-link:focus-visible::after,.nav-btn:focus-visible::after,
+      .nav-btn[aria-expanded="true"]::after{transform:scaleX(1);transform-origin:left}
+      .nav-btn .chev{font-size:9px;transition:transform .4s var(--ease);opacity:.8}
+      .nav-btn[aria-expanded="true"] .chev{transform:rotate(180deg)}
+      .head-actions{display:flex;align-items:center;gap:clamp(10px,1.2vw,18px);flex:none;opacity:0;animation:headIn .9s var(--ease-luxe) .76s forwards}
+      .icon-btn{
+        background:none;border:0;color:inherit;width:40px;height:40px;display:grid;place-items:center;
+        border-radius:50%;transition:background-color .3s,color .3s;
+      }
+      .icon-btn:hover{background:rgba(164,131,79,.16)}
+      .icon-btn svg{width:19px;height:19px}
+      .head-contact{font-size:10.5px;font-weight:600;letter-spacing:.16em;text-transform:uppercase;text-decoration:none;position:relative;padding:8px 0}
+      .head-contact::after{content:"";position:absolute;left:0;right:0;bottom:2px;height:1px;background:currentColor;transform:scaleX(0);transform-origin:right;transition:transform .45s var(--ease-luxe)}
+      .head-contact:hover::after{transform:scaleX(1);transform-origin:left}
+      .head-cta{
+        background:#F6F3ED;color:var(--espresso);padding:12px 17px;font-size:10.5px;letter-spacing:.16em;
+        transition:background-color .4s var(--ease),color .4s var(--ease);
+      }
+      .site-head.scrolled .head-cta{background:var(--espresso);color:#F6F3ED}
+      .head-cta:hover{background:var(--brass)!important;color:#FFFDF8!important}
+      .burger{display:none}
+
+      /* Mega menu */
+      .mega{
+        position:absolute;left:0;right:0;top:100%;
+        visibility:hidden;opacity:0;transform:translateY(10px);
+        transition:opacity .45s var(--ease),transform .45s var(--ease-luxe),visibility 0s .45s;
+      }
+      .mega.open{visibility:visible;opacity:1;transform:none;transition:opacity .45s var(--ease),transform .5s var(--ease-luxe)}
+      .mega-panel{
+        display:none;background:var(--surface);color:var(--ink);
+        border-top:1px solid var(--line-soft);
+        box-shadow:0 40px 70px rgba(30,28,23,.16);
+      }
+      .mega-panel.active{display:block}
+      .mega-in{
+        max-width:var(--maxw);margin:0 auto;padding:44px var(--gutter) 50px;
+        display:grid;grid-template-columns:minmax(300px,420px) 1fr;gap:clamp(36px,5vw,80px);
+      }
+      .mega-fig{position:relative;overflow:hidden;aspect-ratio:4/3;background:var(--stone)}
+      .mega-fig img{width:100%;height:100%;object-fit:cover;transform:scale(1.06);transition:transform 1.4s var(--ease-luxe)}
+      .mega.open .mega-fig img{transform:scale(1)}
+      .mega-fig figcaption{
+        position:absolute;left:0;right:0;bottom:0;padding:38px 22px 16px;color:#F6F3ED;
+        font-size:10.5px;font-weight:600;letter-spacing:.26em;text-transform:uppercase;
+        background:linear-gradient(to top,rgba(30,28,23,.55),transparent);
+      }
+      .mega-copy h3{font-size:clamp(1.7rem,2.4vw,2.3rem);margin-bottom:10px}
+      .mega-copy>p{color:var(--ink-soft);max-width:52ch;margin:0 0 30px;line-height:1.7;font-size:15px}
+      .mega-links{display:grid;grid-template-columns:1fr 1fr;gap:4px 48px;max-width:640px}
+      .mega-links a{
+        display:flex;justify-content:space-between;align-items:center;gap:14px;text-decoration:none;
+        padding:13px 2px;border-bottom:1px solid var(--line-soft);
+        font-size:14.5px;font-weight:500;transition:color .3s,padding-left .35s var(--ease);
+      }
+      .mega-links a .arr{color:var(--brass);opacity:0;transform:translateX(-6px);transition:opacity .3s,transform .35s var(--ease)}
+      .mega-links a:hover{color:var(--olive-deep);padding-left:8px}
+      .mega-links a:hover .arr{opacity:1;transform:none}
+      .mega-foot{margin-top:30px}
+
+      /* Mobile menu + search overlays */
+      .overlay{
+        position:fixed;inset:0;z-index:150;background:var(--bg);color:var(--ink);
+        display:none;overflow-y:auto;overscroll-behavior:contain;
+      }
+      .overlay.open{display:block;animation:overlayIn .45s var(--ease)}
+      @keyframes overlayIn{from{opacity:0}to{opacity:1}}
+      .overlay-in{max-width:760px;margin:0 auto;padding:110px var(--gutter) 60px}
+      .overlay-close{position:absolute;top:22px;right:var(--gutter)}
+      .mnav-group{border-bottom:1px solid var(--line-soft)}
+      .mnav-top{
+        width:100%;background:none;border:0;color:inherit;display:flex;justify-content:space-between;align-items:center;
+        padding:20px 0;text-decoration:none;text-align:left;
+      }
+      .mnav-top .t{font-family:var(--serif);font-size:clamp(1.7rem,6vw,2.3rem);font-weight:500}
+      .mnav-top .chev{font-size:14px;color:var(--brass);transition:transform .4s var(--ease)}
+      .mnav-group.open .mnav-top .chev{transform:rotate(45deg)}
+      .mnav-sub{max-height:0;overflow:hidden;transition:max-height .55s var(--ease-luxe)}
+      .mnav-sub a{
+        display:block;padding:9px 0 9px 18px;text-decoration:none;color:var(--ink-soft);font-size:15px;
+        border-left:1px solid var(--line);margin-left:4px;transition:color .3s,padding-left .3s;
+      }
+      .mnav-sub a:hover{color:var(--olive-deep);padding-left:24px}
+      .mnav-sub{padding-bottom:0}
+      .mnav-group.open .mnav-sub{padding-bottom:16px}
+      .mnav-actions{margin-top:38px;display:flex;flex-wrap:wrap;gap:14px}
+      .search-box{border-bottom:1px solid var(--ink);display:flex;align-items:center;gap:16px;padding-bottom:14px}
+      .search-box input{
+        flex:1;background:none;border:0;color:inherit;font-family:var(--serif);
+        font-size:clamp(1.8rem,5.5vw,3rem);font-weight:400;min-width:0;
+      }
+      .search-box input::placeholder{color:var(--ink-soft);opacity:.55;font-style:italic}
+      .search-box input:focus{outline:none}
+      .search-results{margin-top:28px;display:grid;gap:2px}
+      .search-results a{
+        display:flex;justify-content:space-between;align-items:baseline;gap:20px;text-decoration:none;
+        padding:16px 4px;border-bottom:1px solid var(--line-soft);transition:padding-left .3s var(--ease);
+      }
+      .search-results a:hover{padding-left:12px}
+      .search-results .r-t{font-family:var(--serif);font-size:1.45rem}
+      .search-results .r-c{font-size:10px;font-weight:600;letter-spacing:.26em;text-transform:uppercase;color:var(--olive-deep);white-space:nowrap}
+      .search-empty{color:var(--ink-soft);padding:20px 4px;font-size:15px}
+
+      /* ================= HERO ================= */
+      .hero{position:relative;min-height:100svh;display:flex;align-items:flex-end;background:var(--espresso-deep);color:#F6F3ED;overflow:hidden}
+      .hero-media{position:absolute;inset:0}
+      .hero-media img{
+        width:100%;height:100%;object-fit:cover;object-position:62% 38%;
+        transform:scale(1.12);opacity:0;
+      }
+      body.loaded .hero-media img{animation:heroZoom 9s var(--ease-luxe) forwards}
+      @keyframes heroZoom{from{opacity:0;transform:scale(1.14)}12%{opacity:1}to{opacity:1;transform:scale(1.03)}}
+      .hero-shade{
+        position:absolute;inset:0;
+        background:
+          linear-gradient(to top,rgba(24,22,18,.72) 0%,rgba(24,22,18,.28) 42%,rgba(24,22,18,.05) 65%),
+          linear-gradient(78deg,rgba(24,22,18,.62) 0%,rgba(24,22,18,.22) 46%,rgba(24,22,18,0) 72%),
+          linear-gradient(to bottom,rgba(24,22,18,.38),rgba(24,22,18,0) 22%);
+      }
+      .hero-in{
+        position:relative;z-index:2;width:100%;max-width:var(--maxw);margin:0 auto;
+        padding:170px var(--gutter) clamp(96px,12vh,140px);
+      }
+      .hero .eyebrow{color:var(--brass-soft);opacity:0}
+      .hero h1{font-size:clamp(2.7rem,5.3vw,5.1rem);font-weight:400;line-height:1.04;letter-spacing:.002em;max-width:17ch}
+      .hero h1 .line{display:block;overflow:hidden}
+      @media (min-width:641px){.hero h1 .line>span{white-space:nowrap}}
+      .hero h1 .line>span{display:block;transform:translateY(110%)}
+      body.loaded .hero .eyebrow{animation:fadeUp 1s var(--ease-luxe) .55s forwards}
+      body.loaded .hero h1 .line:nth-child(1)>span{animation:lineUp 1.1s var(--ease-luxe) .7s forwards}
+      body.loaded .hero h1 .line:nth-child(2)>span{animation:lineUp 1.1s var(--ease-luxe) .84s forwards}
+      body.loaded .hero h1 .line:nth-child(3)>span{animation:lineUp 1.1s var(--ease-luxe) .98s forwards}
+      @keyframes lineUp{to{transform:none}}
+      @keyframes fadeUp{from{opacity:0;transform:translateY(18px)}to{opacity:1;transform:none}}
+      .hero-sub{margin:28px 0 0;max-width:47ch;font-size:clamp(1rem,1.3vw,1.15rem);line-height:1.75;color:rgba(246,243,237,.86);opacity:0}
+      body.loaded .hero-sub{animation:fadeUp 1s var(--ease-luxe) 1.2s forwards}
+      .hero-ctas{display:flex;flex-wrap:wrap;gap:16px;margin-top:40px;opacity:0}
+      body.loaded .hero-ctas{animation:fadeUp 1s var(--ease-luxe) 1.38s forwards}
+      .hero-meta{
+        position:absolute;right:var(--gutter);bottom:0;z-index:2;height:46%;
+        display:flex;flex-direction:column;align-items:center;justify-content:flex-end;gap:18px;
+        padding-bottom:clamp(96px,12vh,140px);
+      }
+      .hero-scroll{
+        writing-mode:vertical-rl;font-size:10px;font-weight:600;letter-spacing:.4em;text-transform:uppercase;
+        color:rgba(246,243,237,.75);display:flex;align-items:center;gap:16px;opacity:0;
+      }
+      body.loaded .hero-scroll{animation:fadeUp 1s var(--ease-luxe) 1.7s forwards}
+      .hero-scroll::after{content:"";width:1px;height:64px;background:linear-gradient(var(--brass-soft),transparent);animation:scrollPulse 2.6s var(--ease) infinite}
+      @keyframes scrollPulse{0%{transform:scaleY(0);transform-origin:top}45%{transform:scaleY(1);transform-origin:top}55%{transform:scaleY(1);transform-origin:bottom}100%{transform:scaleY(0);transform-origin:bottom}}
+      .hero-sign{
+        position:absolute;left:var(--gutter);bottom:26px;z-index:2;
+        font-size:10px;font-weight:600;letter-spacing:.34em;text-transform:uppercase;color:rgba(246,243,237,.55);
+      }
+
+      /* ================= COLLECTIONS ================= */
+      .cat-grid{display:grid;grid-template-columns:repeat(12,1fr);gap:clamp(14px,1.8vw,26px)}
+      .cat{
+        position:relative;display:block;overflow:hidden;text-decoration:none;color:#F6F3ED;
+        background:var(--espresso);isolation:isolate;min-height:280px;
+      }
+      .cat img{position:absolute;inset:0;width:100%;height:100%;object-fit:cover;transition:transform 1.3s var(--ease-luxe);z-index:-1}
+      .cat::after{
+        content:"";position:absolute;inset:0;z-index:0;
+        background:linear-gradient(to top,rgba(24,22,18,.78) 0%,rgba(24,22,18,.25) 45%,rgba(24,22,18,0) 70%);
+        transition:background .5s var(--ease);
+      }
+      .cat:hover img,.cat:focus-visible img{transform:scale(1.045)}
+      .cat-body{position:absolute;z-index:1;left:0;right:0;bottom:0;padding:clamp(20px,2.6vw,36px)}
+      .cat-kicker{font-size:10px;font-weight:600;letter-spacing:.3em;text-transform:uppercase;color:var(--brass-soft);display:block;margin-bottom:8px}
+      .cat h3{font-size:clamp(1.55rem,2.5vw,2.3rem);display:flex;align-items:center;gap:14px;transition:transform .6s var(--ease-luxe)}
+      .cat p{margin:8px 0 0;font-size:14.5px;color:rgba(246,243,237,.82);max-width:34ch;line-height:1.6}
+      .cat .arr{
+        margin-left:auto;flex:none;width:42px;height:42px;border:1px solid rgba(246,243,237,.45);border-radius:50%;
+        display:grid;place-items:center;font-size:15px;transition:background-color .4s,color .4s,transform .5s var(--ease);
+      }
+      .cat:hover .arr{background:var(--brass);border-color:var(--brass);transform:translate(3px,-3px)}
+      .cat:hover h3{transform:translateY(-3px)}
+      .cat .frame{position:absolute;inset:14px;border:1px solid rgba(246,243,237,0);z-index:1;pointer-events:none;transition:border-color .6s var(--ease)}
+      .cat:hover .frame{border-color:rgba(246,243,237,.35)}
+      .cat-kitchens{grid-column:1/9;aspect-ratio:16/9.4}
+      .cat-bathrooms{grid-column:9/13;aspect-ratio:auto}
+      .cat-appliances{grid-column:1/5;aspect-ratio:4/3.4}
+      .cat-worktops{grid-column:5/9;aspect-ratio:4/3.4}
+      .cat-tiles{grid-column:9/13;grid-row:span 2;aspect-ratio:auto}
+      .cat-lvt{grid-column:1/9;aspect-ratio:16/6.4}
+
+      /* ================= APPROACH ================= */
+      .approach{background:var(--surface);border-top:1px solid var(--line-soft);border-bottom:1px solid var(--line-soft)}
+      .approach-grid{display:grid;grid-template-columns:repeat(12,1fr);gap:clamp(20px,3vw,48px);align-items:center}
+      .approach-fig{grid-column:1/8;position:relative}
+      .approach-fig .frame-img{overflow:hidden;aspect-ratio:4/4.6;max-height:760px;width:100%}
+      .approach-fig img{width:100%;height:100%;object-fit:cover;transform:scale(1.02);transition:transform 1.6s var(--ease-luxe)}
+      .approach-fig:hover img{transform:scale(1.07) translateY(-6px)}
+      .approach-fig figcaption{
+        display:flex;justify-content:space-between;gap:20px;margin-top:16px;
+        font-size:10.5px;font-weight:600;letter-spacing:.26em;text-transform:uppercase;color:var(--ink-soft);
+      }
+      .approach-fig figcaption i{font-style:normal;color:var(--brass)}
+      .approach-copy{grid-column:8/13;padding-left:clamp(0px,2vw,30px)}
+      .approach-copy .rule{width:56px;height:1px;background:var(--brass);margin:34px 0}
+      .approach-notes{margin:36px 0 40px;display:grid;gap:0}
+      .approach-notes div{display:flex;gap:18px;padding:16px 0;border-top:1px solid var(--line-soft);align-items:baseline}
+      .approach-notes div:last-child{border-bottom:1px solid var(--line-soft)}
+      .approach-notes b{font-family:var(--serif);font-size:1.25rem;font-weight:500;min-width:150px}
+      .approach-notes span{color:var(--ink-soft);font-size:14.5px;line-height:1.6}
+
+      /* ================= MATERIALS ================= */
+      .materials{background:var(--espresso);color:#F6F3ED;overflow:hidden}
+      .materials .eyebrow{color:var(--brass-soft)}
+      .materials .h-section em{color:var(--brass-soft)}
+      .materials .lede{color:rgba(246,243,237,.72)}
+      .mat-head{display:flex;align-items:flex-end;justify-content:space-between;gap:30px;flex-wrap:wrap}
+      .mat-nav{display:flex;gap:12px;flex:none}
+      .mat-nav button{
+        width:52px;height:52px;border-radius:50%;border:1px solid rgba(246,243,237,.35);background:none;color:#F6F3ED;
+        font-size:17px;display:grid;place-items:center;transition:background-color .35s,border-color .35s,opacity .3s;
+      }
+      .mat-nav button:hover{background:var(--brass);border-color:var(--brass)}
+      .mat-nav button:disabled{opacity:.28;cursor:default;background:none;border-color:rgba(246,243,237,.35)}
+      .mat-rail{
+        display:flex;gap:clamp(16px,2vw,28px);overflow-x:auto;scroll-snap-type:x mandatory;
+        padding:6px var(--gutter) 26px;scrollbar-width:none;
+        margin:0 calc(var(--gutter) * -1);
+        padding-left:var(--gutter);padding-right:var(--gutter);
+      }
+      .mat-rail::-webkit-scrollbar{display:none}
+      .mat-card{flex:0 0 min(400px,82vw);scroll-snap-align:start}
+      .mat-card figure{margin:0;overflow:hidden;aspect-ratio:4/5;background:#35322B}
+      .mat-card img{width:100%;height:100%;object-fit:cover;transition:transform 1.3s var(--ease-luxe)}
+      .mat-card:hover img{transform:scale(1.05)}
+      .mat-card figcaption{padding-top:18px;display:flex;gap:16px;align-items:baseline}
+      .mat-card .n{font-family:var(--serif);font-style:italic;color:var(--brass-soft);font-size:1.05rem}
+      .mat-card h3{font-size:1.5rem;margin-bottom:5px}
+      .mat-card p{margin:0;font-size:14px;line-height:1.65;color:rgba(246,243,237,.68);max-width:36ch}
+      .mat-progress{height:1px;background:rgba(246,243,237,.16);position:relative;margin-top:8px}
+      .mat-progress i{position:absolute;left:0;top:0;height:1px;background:var(--brass);width:12%;transition:width .4s var(--ease)}
+
+      /* ================= INSPIRATION ================= */
+      .insp-grid{display:grid;grid-template-columns:repeat(12,1fr);gap:clamp(14px,1.8vw,26px)}
+      .insp{position:relative;overflow:hidden;text-decoration:none;color:#F6F3ED;background:var(--espresso);display:block;isolation:isolate}
+      .insp img{position:absolute;inset:0;width:100%;height:100%;object-fit:cover;z-index:-1;transition:transform 1.3s var(--ease-luxe)}
+      .insp:hover img,.insp:focus-visible img{transform:scale(1.05)}
+      .insp::after{content:"";position:absolute;inset:0;background:linear-gradient(to top,rgba(24,22,18,.82),rgba(24,22,18,.08) 55%);opacity:.85;transition:opacity .5s}
+      .insp:hover::after{opacity:1}
+      .insp-tag{
+        position:absolute;top:18px;left:18px;z-index:1;font-size:9.5px;font-weight:600;letter-spacing:.28em;
+        text-transform:uppercase;background:rgba(30,28,23,.45);-webkit-backdrop-filter:blur(6px);backdrop-filter:blur(6px);
+        padding:7px 12px;border:1px solid rgba(246,243,237,.25);
+      }
+      .insp-body{position:absolute;left:0;right:0;bottom:0;z-index:1;padding:clamp(18px,2.4vw,30px)}
+      .insp-body h3{font-size:clamp(1.4rem,2.2vw,2rem);display:flex;align-items:center;gap:12px}
+      .insp-body p{
+        margin:8px 0 0;font-size:14px;color:rgba(246,243,237,.8);max-width:38ch;line-height:1.6;
+        opacity:0;transform:translateY(8px);transition:opacity .5s var(--ease),transform .55s var(--ease-luxe);
+      }
+      .insp:hover .insp-body p,.insp:focus-visible .insp-body p{opacity:1;transform:none}
+      .insp-body .arr{margin-left:auto;flex:none;transition:transform .5s var(--ease);color:var(--brass-soft);font-size:18px}
+      .insp:hover .arr{transform:translate(4px,-4px)}
+      .insp-1{grid-column:1/8;aspect-ratio:16/10}
+      .insp-2{grid-column:8/13;aspect-ratio:auto}
+      .insp-3{grid-column:1/5;aspect-ratio:4/4.6}
+      .insp-4{grid-column:5/9;aspect-ratio:4/4.6}
+      .insp-5{grid-column:9/13;aspect-ratio:4/4.6}
+      .insp-6{grid-column:1/13;aspect-ratio:21/8}
+      .insp-cta{margin-top:clamp(40px,4vw,60px);text-align:center}
+
+      /* ================= WHY RANVEER ================= */
+      .why{background:var(--surface);border-top:1px solid var(--line-soft)}
+      .why-grid{display:grid;grid-template-columns:repeat(4,1fr);gap:clamp(24px,3vw,44px)}
+      .why-item{border-top:1px solid var(--ink);padding-top:26px}
+      .why-item .idx{font-size:10.5px;font-weight:600;letter-spacing:.3em;color:var(--olive-deep);display:block;margin-bottom:26px}
+      .why-item svg{width:34px;height:34px;stroke:var(--brass);fill:none;stroke-width:1.1;margin-bottom:22px}
+      .why-item h3{font-size:1.55rem;margin-bottom:10px}
+      .why-item p{margin:0;color:var(--ink-soft);font-size:14.5px;line-height:1.7}
+
+      /* ================= ENQUIRY ================= */
+      .enquiry{position:relative;color:#F6F3ED;overflow:hidden}
+      .enquiry-bg{position:absolute;inset:0}
+      .enquiry-bg img{width:100%;height:100%;object-fit:cover}
+      .enquiry-bg::after{content:"";position:absolute;inset:0;background:linear-gradient(84deg,rgba(26,24,20,.93) 0%,rgba(26,24,20,.82) 46%,rgba(26,24,20,.55) 100%)}
+      .enquiry-in{position:relative;z-index:1;display:grid;grid-template-columns:1fr 1fr;gap:clamp(40px,6vw,100px);align-items:start}
+      .enquiry .eyebrow{color:var(--brass-soft)}
+      .enquiry .h-section em{color:var(--brass-soft)}
+      .enquiry .lede{color:rgba(246,243,237,.8)}
+      .enquiry-points{margin-top:38px;display:grid;gap:0;max-width:440px}
+      .enquiry-points div{display:flex;gap:16px;align-items:baseline;padding:15px 0;border-top:1px solid rgba(246,243,237,.18)}
+      .enquiry-points b{font-family:var(--serif);font-weight:500;font-size:1.2rem;white-space:nowrap}
+      .enquiry-points span{font-size:14px;color:rgba(246,243,237,.72);line-height:1.6}
+      .form-card{background:var(--paper);color:var(--espresso);padding:clamp(28px,3.4vw,46px);box-shadow:0 40px 80px rgba(20,18,15,.35)}
+      @media (prefers-color-scheme:dark){.form-card{background:#F6F3ED}}
+      .form-card h3{font-size:1.7rem;margin-bottom:6px}
+      .form-card>p{margin:0 0 26px;font-size:14px;color:#57534A;line-height:1.65}
+      .field{margin-bottom:18px}
+      .field label{display:block;font-size:10.5px;font-weight:700;letter-spacing:.22em;text-transform:uppercase;margin-bottom:8px;color:#3E3A31}
+      .field label i{font-style:normal;color:#A4834F}
+      .field input,.field select,.field textarea{
+        width:100%;background:#FFF;border:1px solid #D8D0C0;color:#292720;
+        font-family:var(--sans);font-size:15px;padding:13px 15px;border-radius:0;
+        transition:border-color .3s,box-shadow .3s;appearance:none;
+      }
+      .field textarea{resize:vertical;min-height:104px}
+      .field select{background-image:url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='12' height='8'%3E%3Cpath d='M1 1l5 5 5-5' fill='none' stroke='%23A4834F' stroke-width='1.6'/%3E%3C/svg%3E");background-repeat:no-repeat;background-position:right 15px center}
+      .field input:focus,.field select:focus,.field textarea:focus{outline:none;border-color:#A4834F;box-shadow:0 0 0 3px rgba(164,131,79,.22)}
+      .field .err{display:none;font-size:13px;color:#9C3B2E;margin-top:7px;line-height:1.5}
+      .field.invalid input,.field.invalid select,.field.invalid textarea{border-color:#9C3B2E}
+      .field.invalid .err{display:block}
+      .form-row{display:grid;grid-template-columns:1fr 1fr;gap:16px}
+      .form-card .btn{width:100%;justify-content:center}
+      .form-note{margin:16px 0 0;font-size:12.5px;color:#6E685C;line-height:1.6;text-align:center}
+      .form-success{display:none;text-align:center;padding:26px 0 8px}
+      .form-success.show{display:block}
+      .form-success .tick{
+        width:62px;height:62px;margin:0 auto 20px;border:1px solid #A4834F;border-radius:50%;
+        display:grid;place-items:center;color:#A4834F;font-size:24px;
+      }
+      .form-success h4{font-family:var(--serif);font-size:1.7rem;font-weight:500;margin:0 0 10px}
+      .form-success p{font-size:14.5px;color:#57534A;line-height:1.7;max-width:42ch;margin:0 auto 22px}
+      .form-success .btn{width:auto}
+
+      /* ================= FOOTER ================= */
+      main{overflow-x:clip}
+      footer{background:var(--espresso-deep);color:#EDE8DC;overflow:hidden}
+      .foot-top{
+        display:grid;grid-template-columns:1.4fr 1fr 1fr 1.1fr;gap:clamp(30px,4vw,60px);
+        padding:clamp(70px,8vw,110px) 0 60px;
+      }
+      .foot-brand p{color:rgba(237,232,220,.66);font-size:14.5px;line-height:1.75;max-width:36ch;margin:20px 0 26px}
+      .foot-logo{display:flex;align-items:center;gap:14px;color:#F6F3ED}
+      .foot h4{font-size:10.5px;font-weight:700;letter-spacing:.3em;text-transform:uppercase;color:var(--brass-soft);margin:6px 0 22px;font-family:var(--sans)}
+      .foot-links{list-style:none;margin:0;padding:0;display:grid;gap:11px}
+      .foot-links a,.foot-links button{
+        color:rgba(237,232,220,.78);text-decoration:none;font-size:14.5px;background:none;border:0;padding:0;
+        transition:color .3s,padding-left .3s var(--ease);text-align:left;
+      }
+      .foot-links a:hover,.foot-links button:hover{color:#F6F3ED;padding-left:6px}
+      .foot-contact p{color:rgba(237,232,220,.66);font-size:14.5px;line-height:1.75;margin:0 0 18px;max-width:32ch}
+      .socials{display:flex;gap:10px;margin-top:6px}
+      .socials a{
+        width:42px;height:42px;border:1px solid rgba(246,243,237,.28);border-radius:50%;display:grid;place-items:center;
+        color:#EDE8DC;transition:background-color .35s,border-color .35s,transform .35s var(--ease);
+      }
+      .socials a:hover{background:var(--brass);border-color:var(--brass);transform:translateY(-3px)}
+      .socials svg{width:16px;height:16px;fill:currentColor}
+      .foot-word{
+        font-family:var(--serif);font-weight:500;line-height:.8;text-align:center;
+        font-size:clamp(3.2rem,8.3vw,8.2rem);letter-spacing:.1em;color:transparent;
+        -webkit-text-stroke:1px rgba(246,243,237,.22);user-select:none;padding:10px 0 0;
+      }
+      .foot-word b{font-weight:500;color:rgba(246,243,237,.92);-webkit-text-stroke:0}
+      .foot-bar{
+        border-top:1px solid rgba(246,243,237,.14);padding:24px 0 30px;
+        display:flex;justify-content:space-between;align-items:center;gap:18px;flex-wrap:wrap;
+        font-size:12.5px;color:rgba(237,232,220,.55);
+      }
+      .foot-bar nav{display:flex;gap:26px}
+      .foot-bar button{background:none;border:0;color:inherit;font-size:12.5px;padding:0;transition:color .3s}
+      .foot-bar button:hover{color:#F6F3ED}
+      .to-top{
+        display:inline-flex;align-items:center;gap:10px;background:none;border:0;color:#EDE8DC;
+        font-size:10.5px;font-weight:600;letter-spacing:.26em;text-transform:uppercase;padding:8px 0;
+      }
+      .to-top .arr{transition:transform .4s var(--ease)}
+      .to-top:hover .arr{transform:translateY(-4px)}
+
+      /* Policy dialog */
+      dialog.policy{
+        border:1px solid var(--line);background:var(--surface);color:var(--ink);
+        max-width:min(620px,92vw);padding:0;width:100%;
+      }
+      dialog.policy::backdrop{background:rgba(24,22,18,.6);-webkit-backdrop-filter:blur(4px);backdrop-filter:blur(4px)}
+      .policy-in{padding:clamp(28px,4vw,44px)}
+      .policy-in h3{font-size:1.9rem;margin-bottom:14px}
+      .policy-in p{color:var(--ink-soft);font-size:14.5px;line-height:1.75}
+      .policy-close{margin-top:24px}
+
+      /* ============ RESPONSIVE ============ */
+      @media (max-width:1240px){
+        .mainnav{display:none}
+        .burger{display:grid}
+        .head-contact{display:none}
+      }
+      @media (max-width:900px){
+        .cat-kitchens,.cat-bathrooms,.cat-appliances,.cat-worktops,.cat-tiles,.cat-lvt{grid-column:1/13;grid-row:auto;aspect-ratio:4/3}
+        .cat-tiles{aspect-ratio:4/3.4}
+        .approach-fig,.approach-copy{grid-column:1/13}
+        .approach-fig .frame-img{aspect-ratio:4/3;max-height:none}
+        .approach-copy{padding-left:0;margin-top:10px}
+        .insp-1,.insp-2,.insp-3,.insp-4,.insp-5,.insp-6{grid-column:1/13;aspect-ratio:4/3}
+        .why-grid{grid-template-columns:1fr 1fr}
+        .enquiry-in{grid-template-columns:1fr}
+        .foot-top{grid-template-columns:1fr 1fr}
+        .hero-meta{display:none}
+        .mega-in{grid-template-columns:1fr}
+        .mega-fig{display:none}
+      }
+      @media (max-width:900px){
+        .mat-rail{margin:0;padding-left:0;padding-right:0}
+      }
+      @media (max-width:560px){
+        :root{--header-h:66px;--topbar-h:48px}
+        .topbar p{letter-spacing:.11em;font-size:8px;line-height:1.55;white-space:normal}
+        .topbar a{letter-spacing:.14em;font-size:9px}
+        .topbar a span{display:none}
+        .head-cta{display:none}
+        .logo-word small{display:none}
+        .logo-word b{font-size:20px}
+        .logo-mark{width:40px;height:40px}
+        .why-grid{grid-template-columns:1fr}
+        .form-row{grid-template-columns:1fr}
+        .foot-top{grid-template-columns:1fr}
+        .hero-in{padding-top:140px}
+        .hero-sign{display:none}
+        .btn{padding:15px 22px}
+        .mega-links{grid-template-columns:1fr}
+        .approach-notes b{min-width:110px}
+      }
+      @media (prefers-reduced-motion:reduce){
+        html{scroll-behavior:auto}
+        *,*::before,*::after{animation-duration:.001s!important;animation-delay:0s!important;transition-duration:.001s!important}
+        .rv,.rv-img{opacity:1;transform:none;clip-path:none}
+        .hero-media img{opacity:1;transform:none}
+        .hero .eyebrow,.hero-sub,.hero-ctas,.hero-scroll{opacity:1}
+        .hero h1 .line>span{transform:none}
+        .logo,.mainnav .nav-item,.head-actions{opacity:1;animation:none}
+      }
+    </style>
+  </head>
+  <body>
+    <a class="skip-link" href="#main">Skip to content</a>
+
+    <!-- ================= HEADER ================= -->
+    <header class="site-head" id="siteHead">
+      <div class="topbar" aria-hidden="false">
+        <div class="topbar-in">
+          <p>Thoughtfully selected interiors for modern British living</p>
+          <a href="#approach">Explore Ranveer <span class="arr" aria-hidden="true">↗</span></a>
+        </div>
+      </div>
+      <div class="mainbar">
+        <div class="mainbar-in">
+          <a class="logo" href="#top" aria-label="Ranveer — home">
+            <span class="logo-mark" aria-hidden="true"><span>R</span></span>
+            <span class="logo-word"><b>Ranveer</b><small>Kitchens · Bathrooms · Interiors</small></span>
+          </a>
+
+          <nav class="mainnav" aria-label="Primary">
+            <span class="nav-item"><button class="nav-btn" type="button" data-mega="kitchens" aria-expanded="false" aria-haspopup="true">Kitchens <span class="chev" aria-hidden="true">▾</span></button></span>
+            <span class="nav-item"><button class="nav-btn" type="button" data-mega="bathrooms" aria-expanded="false" aria-haspopup="true">Bathrooms <span class="chev" aria-hidden="true">▾</span></button></span>
+            <span class="nav-item"><a class="nav-link" href="#appliances">Appliances</a></span>
+            <span class="nav-item"><a class="nav-link" href="#worktops">Worktops</a></span>
+            <span class="nav-item"><button class="nav-btn" type="button" data-mega="tiles" aria-expanded="false" aria-haspopup="true">Tiles &amp; Flooring <span class="chev" aria-hidden="true">▾</span></button></span>
+            <span class="nav-item"><a class="nav-link" href="#inspiration">Inspiration</a></span>
+          </nav>
+
+          <div class="head-actions">
+            <button class="icon-btn" type="button" id="searchOpen" aria-label="Search Ranveer collections">
+              <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.6" aria-hidden="true"><circle cx="11" cy="11" r="7"/><path d="M20 20l-3.8-3.8"/></svg>
+            </button>
+            <a class="head-contact" href="#enquiry">Contact</a>
+            <a class="btn head-cta" href="#enquiry">Plan Your Space <span class="arr" aria-hidden="true">↗</span></a>
+            <button class="icon-btn burger" type="button" id="menuOpen" aria-label="Open menu" aria-expanded="false">
+              <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.6" aria-hidden="true"><path d="M3 7h18M3 12h12M3 17h18"/></svg>
+            </button>
+          </div>
+        </div>
+
+        <!-- Mega menu -->
+        <div class="mega" id="megaMenu">
+          <div class="mega-panel" data-panel="kitchens">
+            <div class="mega-in">
+              <figure class="mega-fig">
+                <img src="assets/img-01.webp" alt="Contemporary kitchen with oak cabinetry, stone island and brushed-brass taps" />
+                <figcaption>The Kitchen Collection</figcaption>
+              </figure>
+              <div class="mega-copy">
+                <h3>Kitchens, considered in every detail</h3>
+                <p>Cabinetry, worktops, appliances and finishing touches brought together for the heart of your home.</p>
+                <div class="mega-links">
+                  <a href="#kitchens">Kitchen Collections <span class="arr">→</span></a>
+                  <a href="#worktops">Worktops &amp; Surfaces <span class="arr">→</span></a>
+                  <a href="#appliances">Appliances <span class="arr">→</span></a>
+                  <a href="#materials">Taps &amp; Finishes <span class="arr">→</span></a>
+                </div>
+                <div class="mega-foot"><a class="text-link" href="#enquiry" data-cat="Kitchen">Plan your kitchen <span class="arr">↗</span></a></div>
+              </div>
+            </div>
+          </div>
+          <div class="mega-panel" data-panel="bathrooms">
+            <div class="mega-in">
+              <figure class="mega-fig">
+                <img src="assets/img-02.webp" alt="Marble bathroom with freestanding bath and gold-toned fittings" loading="lazy" />
+                <figcaption>The Bathroom Collection</figcaption>
+              </figure>
+              <div class="mega-copy">
+                <h3>Bathrooms, beautifully elevated</h3>
+                <p>Sanitaryware, brassware, tiles and finishes selected to turn everyday rituals into quiet moments of calm.</p>
+                <div class="mega-links">
+                  <a href="#bathrooms">Bathroom Collections <span class="arr">→</span></a>
+                  <a href="#materials">Brassware &amp; Taps <span class="arr">→</span></a>
+                  <a href="#tiles">Wall &amp; Floor Tiles <span class="arr">→</span></a>
+                  <a href="#inspiration">Bathroom Inspiration <span class="arr">→</span></a>
+                </div>
+                <div class="mega-foot"><a class="text-link" href="#enquiry" data-cat="Bathroom">Plan your bathroom <span class="arr">↗</span></a></div>
+              </div>
+            </div>
+          </div>
+          <div class="mega-panel" data-panel="tiles">
+            <div class="mega-in">
+              <figure class="mega-fig">
+                <img src="assets/img-03.webp" alt="Textured geometric wall tiles in a deep bronze tone" loading="lazy" />
+                <figcaption>Tiles &amp; Flooring</figcaption>
+              </figure>
+              <div class="mega-copy">
+                <h3>Texture, tone and timeless appeal</h3>
+                <p>Wall and floor tiles alongside premium LVT flooring — the foundations that set the character of a room.</p>
+                <div class="mega-links">
+                  <a href="#tiles">Wall &amp; Floor Tiles <span class="arr">→</span></a>
+                  <a href="#flooring">LVT Flooring <span class="arr">→</span></a>
+                  <a href="#materials">Textures &amp; Finishes <span class="arr">→</span></a>
+                  <a href="#inspiration">Flooring Inspiration <span class="arr">→</span></a>
+                </div>
+                <div class="mega-foot"><a class="text-link" href="#enquiry" data-cat="Tiles &amp; Flooring">Plan your surfaces <span class="arr">↗</span></a></div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </header>
+
+    <!-- Mobile menu -->
+    <div class="overlay" id="mobileMenu" role="dialog" aria-modal="true" aria-label="Menu">
+      <button class="icon-btn overlay-close" type="button" id="menuClose" aria-label="Close menu">
+        <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.6" aria-hidden="true"><path d="M5 5l14 14M19 5L5 19"/></svg>
+      </button>
+      <div class="overlay-in">
+        <p class="eyebrow">Menu</p>
+        <nav aria-label="Mobile">
+          <div class="mnav-group">
+            <button class="mnav-top" type="button" aria-expanded="false"><span class="t">Kitchens</span><span class="chev" aria-hidden="true">+</span></button>
+            <div class="mnav-sub">
+              <a href="#kitchens">Kitchen Collections</a>
+              <a href="#worktops">Worktops &amp; Surfaces</a>
+              <a href="#appliances">Appliances</a>
+              <a href="#enquiry" data-cat="Kitchen">Plan your kitchen</a>
+            </div>
+          </div>
+          <div class="mnav-group">
+            <button class="mnav-top" type="button" aria-expanded="false"><span class="t">Bathrooms</span><span class="chev" aria-hidden="true">+</span></button>
+            <div class="mnav-sub">
+              <a href="#bathrooms">Bathroom Collections</a>
+              <a href="#materials">Brassware &amp; Taps</a>
+              <a href="#tiles">Wall &amp; Floor Tiles</a>
+              <a href="#enquiry" data-cat="Bathroom">Plan your bathroom</a>
+            </div>
+          </div>
+          <div class="mnav-group"><a class="mnav-top" href="#appliances"><span class="t">Appliances</span><span class="chev" aria-hidden="true">→</span></a></div>
+          <div class="mnav-group"><a class="mnav-top" href="#worktops"><span class="t">Worktops</span><span class="chev" aria-hidden="true">→</span></a></div>
+          <div class="mnav-group">
+            <button class="mnav-top" type="button" aria-expanded="false"><span class="t">Tiles &amp; Flooring</span><span class="chev" aria-hidden="true">+</span></button>
+            <div class="mnav-sub">
+              <a href="#tiles">Wall &amp; Floor Tiles</a>
+              <a href="#flooring">LVT Flooring</a>
+              <a href="#materials">Textures &amp; Finishes</a>
+              <a href="#enquiry" data-cat="Tiles &amp; Flooring">Plan your surfaces</a>
+            </div>
+          </div>
+          <div class="mnav-group"><a class="mnav-top" href="#inspiration"><span class="t">Inspiration</span><span class="chev" aria-hidden="true">→</span></a></div>
+          <div class="mnav-group"><a class="mnav-top" href="#approach"><span class="t">The Ranveer Approach</span><span class="chev" aria-hidden="true">→</span></a></div>
+        </nav>
+        <div class="mnav-actions">
+          <a class="btn btn-solid" href="#enquiry">Plan Your Space <span class="arr" aria-hidden="true">↗</span></a>
+          <a class="btn btn-outline" href="#collections">Explore Collections</a>
+        </div>
+      </div>
+    </div>
+
+    <!-- Search overlay -->
+    <div class="overlay" id="searchOverlay" role="dialog" aria-modal="true" aria-label="Search">
+      <button class="icon-btn overlay-close" type="button" id="searchClose" aria-label="Close search">
+        <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.6" aria-hidden="true"><path d="M5 5l14 14M19 5L5 19"/></svg>
+      </button>
+      <div class="overlay-in">
+        <p class="eyebrow">Search Ranveer</p>
+        <div class="search-box">
+          <svg width="26" height="26" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.4" aria-hidden="true"><circle cx="11" cy="11" r="7"/><path d="M20 20l-3.8-3.8"/></svg>
+          <input type="search" id="searchInput" placeholder="Try “worktops” or “tiles”…" autocomplete="off" aria-label="Search collections and sections" />
+        </div>
+        <div class="search-results" id="searchResults" aria-live="polite"></div>
+      </div>
+    </div>
+
+    <main id="main">
+      <!-- ================= HERO ================= -->
+      <section class="hero" id="top" aria-label="Ranveer — introduction">
+        <div class="hero-media">
+          <img src="assets/img-04.webp" alt="Contemporary British kitchen with a natural-stone island, oak cabinetry, sculptural pendant lights and brushed-brass tap" fetchpriority="high" />
+          <div class="hero-shade" aria-hidden="true"></div>
+        </div>
+        <div class="hero-in">
+          <p class="eyebrow">Designed Around Your Home</p>
+          <h1>
+            <span class="line"><span>Beautiful Spaces.</span></span>
+            <span class="line"><span>Thoughtfully Made.</span></span>
+            <span class="line"><span><em>Yours to Create.</em></span></span>
+          </h1>
+          <p class="hero-sub">Discover kitchens, bathrooms, appliances, surfaces and finishing touches selected to help you create a home that feels uniquely yours.</p>
+          <div class="hero-ctas">
+            <a class="btn btn-brass" href="#collections">Explore Our Collections <span class="arr" aria-hidden="true">↗</span></a>
+            <a class="btn btn-ghost" href="#enquiry">Plan Your Project</a>
+          </div>
+        </div>
+        <div class="hero-meta" aria-hidden="true"><span class="hero-scroll">Scroll to Discover</span></div>
+        <p class="hero-sign" aria-hidden="true">Ranveer — Est. in the details</p>
+      </section>
+
+      <!-- ================= COLLECTIONS ================= -->
+      <section class="section" id="collections" aria-labelledby="collections-h">
+        <div class="wrap">
+          <div class="section-head">
+            <p class="eyebrow rv">Explore the Collections</p>
+            <h2 class="h-section rv d1" id="collections-h">Everything Comes <em>Together</em> Here.</h2>
+            <p class="lede rv d2">From the foundations to the finishing touches, discover the details that transform a space.</p>
+          </div>
+          <div class="cat-grid">
+            <a class="cat cat-kitchens rv-img" id="kitchens" href="#enquiry" data-cat="Kitchen">
+              <img src="assets/img-01.webp" alt="Light oak kitchen with marble island, brass extractor and stone worktops" loading="lazy" />
+              <span class="frame" aria-hidden="true"></span>
+              <span class="cat-body">
+                <span class="cat-kicker">Collection 01</span>
+                <h3>Kitchens <span class="arr" aria-hidden="true">↗</span></h3>
+                <p>Considered design for the heart of your home.</p>
+              </span>
+            </a>
+            <a class="cat cat-bathrooms rv-img" id="bathrooms" href="#enquiry" data-cat="Bathroom">
+              <img src="assets/img-05.webp" alt="Freestanding bath against dramatic marble wall tiles with brass bath filler" loading="lazy" />
+              <span class="frame" aria-hidden="true"></span>
+              <span class="cat-body">
+                <span class="cat-kicker">Collection 02</span>
+                <h3>Bathrooms <span class="arr" aria-hidden="true">↗</span></h3>
+                <p>Everyday moments, beautifully elevated.</p>
+              </span>
+            </a>
+            <a class="cat cat-appliances rv-img" id="appliances" href="#enquiry" data-cat="Appliances">
+              <img src="assets/img-06.webp" alt="Sage-green range cooker set within painted shaker cabinetry" loading="lazy" />
+              <span class="frame" aria-hidden="true"></span>
+              <span class="cat-body">
+                <span class="cat-kicker">Collection 03</span>
+                <h3>Appliances <span class="arr" aria-hidden="true">↗</span></h3>
+                <p>Practical innovation meets refined design.</p>
+              </span>
+            </a>
+            <a class="cat cat-worktops rv-img" id="worktops" href="#enquiry" data-cat="Worktops">
+              <img src="assets/img-07.webp" alt="Close-up of a veined natural-stone worktop edge above dark cabinetry" loading="lazy" />
+              <span class="frame" aria-hidden="true"></span>
+              <span class="cat-body">
+                <span class="cat-kicker">Collection 04</span>
+                <h3>Worktops <span class="arr" aria-hidden="true">↗</span></h3>
+                <p>Distinctive surfaces. Lasting character.</p>
+              </span>
+            </a>
+            <a class="cat cat-tiles rv-img" id="tiles" href="#enquiry" data-cat="Tiles &amp; Flooring">
+              <img src="assets/img-08.webp" alt="Hand-glazed crackle-finish wall tiles catching soft daylight" loading="lazy" />
+              <span class="frame" aria-hidden="true"></span>
+              <span class="cat-body">
+                <span class="cat-kicker">Collection 05</span>
+                <h3>Wall &amp; Floor Tiles <span class="arr" aria-hidden="true">↗</span></h3>
+                <p>Texture, tone and timeless appeal.</p>
+              </span>
+            </a>
+            <a class="cat cat-lvt rv-img" id="flooring" href="#enquiry" data-cat="Tiles &amp; Flooring">
+              <img src="assets/img-09.webp" alt="Herringbone LVT flooring flowing through an open-plan kitchen and living space" loading="lazy" />
+              <span class="frame" aria-hidden="true"></span>
+              <span class="cat-body">
+                <span class="cat-kicker">Collection 06</span>
+                <h3>LVT Flooring <span class="arr" aria-hidden="true">↗</span></h3>
+                <p>Beautiful finishes for everyday living.</p>
+              </span>
+            </a>
+          </div>
+        </div>
+      </section>
+
+      <!-- ================= APPROACH ================= -->
+      <section class="section approach" id="approach" aria-labelledby="approach-h">
+        <div class="wrap">
+          <div class="approach-grid">
+            <figure class="approach-fig rv-img" style="margin:0">
+              <div class="frame-img">
+                <img src="assets/img-10.webp" alt="Warm architectural interior with bespoke oak joinery, open shelving and a contemporary fireplace" loading="lazy" />
+              </div>
+              <figcaption><span>Bespoke joinery &amp; warm minimalism</span><i>Nº 01 — Interiors</i></figcaption>
+            </figure>
+            <div class="approach-copy">
+              <p class="eyebrow rv">The Ranveer Approach</p>
+              <h2 class="h-section rv d1" id="approach-h">It's the <em>Details</em> That Make a Home.</h2>
+              <div class="rule rv d2" aria-hidden="true"></div>
+              <p class="lede rv d2">Discover carefully considered products, beautiful materials and finishing touches that bring personality and practicality to your space.</p>
+              <div class="approach-notes">
+                <div class="rv d2"><b>Considered</b><span>Collections chosen piece by piece, so every element earns its place in your home.</span></div>
+                <div class="rv d3"><b>Coordinated</b><span>Surfaces, brassware and flooring selected to sit comfortably together, room to room.</span></div>
+                <div class="rv d4"><b>Personal</b><span>Guidance shaped around how you live — not around a standard template.</span></div>
+              </div>
+              <a class="text-link rv d4" href="#inspiration">Discover Ranveer <span class="arr" aria-hidden="true">↗</span></a>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <!-- ================= MATERIALS ================= -->
+      <section class="section materials" id="materials" aria-labelledby="materials-h">
+        <div class="wrap">
+          <div class="mat-head">
+            <div class="section-head" style="margin-bottom:0">
+              <p class="eyebrow rv">Materials, Textures &amp; Finishes</p>
+              <h2 class="h-section rv d1" id="materials-h">Chosen by Hand, <em>Felt</em> in Every Room.</h2>
+              <p class="lede rv d2">Close-up, the quality of a space reveals itself — in the veining of stone, the weight of brass, the glaze of a tile.</p>
+            </div>
+            <div class="mat-nav rv d2">
+              <button type="button" id="matPrev" aria-label="Previous materials">←</button>
+              <button type="button" id="matNext" aria-label="Next materials">→</button>
+            </div>
+          </div>
+          <div class="mat-rail" id="matRail" tabindex="0" aria-label="Materials gallery">
+            <article class="mat-card">
+              <figure><img src="assets/img-11.webp" alt="Polished marble-look worktop surface in soft natural light" loading="lazy" /></figure>
+              <figcaption><span class="n">01</span><div><h3>Natural Stone Worktops</h3><p>Veined surfaces that bring movement and light to kitchens and bathrooms alike.</p></div></figcaption>
+            </article>
+            <article class="mat-card">
+              <figure><img src="assets/img-12.webp" alt="Brushed-brass swan-neck kitchen tap on a stone worktop" loading="lazy" /></figure>
+              <figcaption><span class="n">02</span><div><h3>Brushed-Brass Taps</h3><p>Warm metallic finishes that deepen in character as they settle into daily life.</p></div></figcaption>
+            </article>
+            <article class="mat-card">
+              <figure><img src="assets/img-03.webp" alt="Geometric textured wall tiles in a deep bronze finish" loading="lazy" /></figure>
+              <figcaption><span class="n">03</span><div><h3>Textured Wall Tiles</h3><p>Relief and pattern that catch the light differently from morning to evening.</p></div></figcaption>
+            </article>
+            <article class="mat-card">
+              <figure><img src="assets/img-13.webp" alt="Stone-tiled walk-in shower with rainfall shower head" loading="lazy" /></figure>
+              <figcaption><span class="n">04</span><div><h3>Elegant Bathroom Finishes</h3><p>Natural stone and considered fittings for bathrooms that feel quietly restorative.</p></div></figcaption>
+            </article>
+            <article class="mat-card">
+              <figure><img src="assets/img-14.webp" alt="Painted contemporary kitchen cabinetry in a soft blue with steel handles" loading="lazy" /></figure>
+              <figcaption><span class="n">05</span><div><h3>Contemporary Cabinetry</h3><p>Painted and timber cabinetry in colours chosen to live with, not just look at.</p></div></figcaption>
+            </article>
+            <article class="mat-card">
+              <figure><img src="assets/img-15.webp" alt="Dark chevron-pattern wood-effect flooring in an elegant room" loading="lazy" /></figure>
+              <figcaption><span class="n">06</span><div><h3>Premium LVT Flooring</h3><p>Wood-effect finishes in herringbone and chevron lays, made for everyday living.</p></div></figcaption>
+            </article>
+          </div>
+          <div class="mat-progress" aria-hidden="true"><i id="matBar"></i></div>
+        </div>
+      </section>
+
+      <!-- ================= INSPIRATION ================= -->
+      <section class="section" id="inspiration" aria-labelledby="inspiration-h">
+        <div class="wrap">
+          <div class="section-head">
+            <p class="eyebrow rv">Ideas for Your Next Project</p>
+            <h2 class="h-section rv d1" id="inspiration-h">Find Inspiration in <em>Every Detail.</em></h2>
+            <p class="lede rv d2">Contemporary kitchens, spa-inspired bathrooms and the surfaces that bring them together.</p>
+          </div>
+          <div class="insp-grid">
+            <a class="insp insp-1 rv-img" href="#enquiry" data-cat="Kitchen">
+              <img src="assets/img-16.webp" alt="Bespoke shaker kitchen with painted cabinetry, stone floors and a range cooker" loading="lazy" />
+              <span class="insp-tag">Kitchens</span>
+              <span class="insp-body">
+                <h3>The Painted Shaker Kitchen <span class="arr" aria-hidden="true">↗</span></h3>
+                <p>Hand-painted cabinetry, a generous island and stone underfoot.</p>
+              </span>
+            </a>
+            <a class="insp insp-2 rv-img" href="#enquiry" data-cat="Bathroom">
+              <img src="assets/img-17.webp" alt="Spa-style shower room with pebble tiles and a rainfall shower" loading="lazy" />
+              <span class="insp-tag">Bathrooms</span>
+              <span class="insp-body">
+                <h3>A Spa-Inspired Retreat <span class="arr" aria-hidden="true">↗</span></h3>
+                <p>Pebble tiles and rainfall showers for a slower start to the day.</p>
+              </span>
+            </a>
+            <a class="insp insp-3 rv-img" href="#enquiry" data-cat="Tiles &amp; Flooring">
+              <img src="assets/img-08.webp" alt="Crackle-glaze tiles in soft ivory tones" loading="lazy" />
+              <span class="insp-tag">Tiles</span>
+              <span class="insp-body">
+                <h3>Glaze &amp; Texture <span class="arr" aria-hidden="true">↗</span></h3>
+                <p>Hand-finished surfaces with a soft, lived-in lustre.</p>
+              </span>
+            </a>
+            <a class="insp insp-4 rv-img" href="#enquiry" data-cat="Worktops">
+              <img src="assets/img-07.webp" alt="Veined stone worktop in close-up" loading="lazy" />
+              <span class="insp-tag">Worktops</span>
+              <span class="insp-body">
+                <h3>Statement Stone <span class="arr" aria-hidden="true">↗</span></h3>
+                <p>Bold veining that turns a worktop into the room's focal point.</p>
+              </span>
+            </a>
+            <a class="insp insp-5 rv-img" href="#enquiry" data-cat="Bathroom">
+              <img src="assets/img-02.webp" alt="Gloss marble bathroom with freestanding bath and statement lighting" loading="lazy" />
+              <span class="insp-tag">Bathrooms</span>
+              <span class="insp-body">
+                <h3>Marble &amp; Light <span class="arr" aria-hidden="true">↗</span></h3>
+                <p>Polished stone, warm metal and a bath made for lingering.</p>
+              </span>
+            </a>
+            <a class="insp insp-6 rv-img" href="#enquiry" data-cat="Appliances">
+              <img src="assets/img-18.webp" alt="Range cooker in a deep navy kitchen with stone worktops" loading="lazy" />
+              <span class="insp-tag">Appliances</span>
+              <span class="insp-body">
+                <h3>The Cook's Kitchen <span class="arr" aria-hidden="true">↗</span></h3>
+                <p>A statement range at the centre of a kitchen built for gathering.</p>
+              </span>
+            </a>
+          </div>
+          <div class="insp-cta rv">
+            <a class="btn btn-outline" href="#enquiry">Explore More Inspiration <span class="arr" aria-hidden="true">↗</span></a>
+          </div>
+        </div>
+      </section>
+
+      <!-- ================= WHY RANVEER ================= -->
+      <section class="section why" id="why" aria-labelledby="why-h">
+        <div class="wrap">
+          <div class="section-head">
+            <p class="eyebrow rv">Why Ranveer</p>
+            <h2 class="h-section rv d1" id="why-h">A Quieter Kind of <em>Confidence.</em></h2>
+          </div>
+          <div class="why-grid">
+            <div class="why-item rv">
+              <span class="idx">01</span>
+              <svg viewBox="0 0 24 24" aria-hidden="true"><path d="M12 3l2.1 4.6L19 9l-3.6 3.3 1 4.9L12 14.7l-4.4 2.5 1-4.9L5 9l4.9-1.4z"/></svg>
+              <h3>Carefully Selected Collections</h3>
+              <p>Every kitchen, surface and fitting is chosen deliberately — nothing included simply to fill a page.</p>
+            </div>
+            <div class="why-item rv d1">
+              <span class="idx">02</span>
+              <svg viewBox="0 0 24 24" aria-hidden="true"><circle cx="12" cy="12" r="9"/><path d="M15.5 8.5l-2 5-5 2 2-5z"/></svg>
+              <h3>Design-Led Inspiration</h3>
+              <p>Ideas grounded in real rooms and real materials, helping you picture your own space with clarity.</p>
+            </div>
+            <div class="why-item rv d2">
+              <span class="idx">03</span>
+              <svg viewBox="0 0 24 24" aria-hidden="true"><path d="M4 11l8-7 8 7"/><path d="M6 9.5V20h12V9.5"/><path d="M10 20v-5h4v5"/></svg>
+              <h3>Practical Choices for Everyday Living</h3>
+              <p>Beautiful need not mean fragile. Finishes and layouts are selected to suit busy, lived-in homes.</p>
+            </div>
+            <div class="why-item rv d3">
+              <span class="idx">04</span>
+              <svg viewBox="0 0 24 24" aria-hidden="true"><path d="M4 6h16M4 12h10M4 18h7"/><circle cx="19" cy="17" r="2.4"/></svg>
+              <h3>Support for Your Project</h3>
+              <p>From first ideas to finishing touches, tell us about your plans and we'll help you shape the next steps.</p>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <!-- ================= ENQUIRY ================= -->
+      <section class="section enquiry" id="enquiry" aria-labelledby="enquiry-h">
+        <div class="enquiry-bg" aria-hidden="true"><img src="assets/img-19.webp" alt="" loading="lazy" /></div>
+        <div class="wrap enquiry-in">
+          <div>
+            <p class="eyebrow rv">Begin Your Project</p>
+            <h2 class="h-section rv d1" id="enquiry-h">Let's Create Something <em>Beautiful.</em></h2>
+            <p class="lede rv d2" style="margin-top:22px">Whether you're exploring a new kitchen, refreshing your bathroom or choosing the finishing touches, tell us about your plans.</p>
+            <div class="enquiry-points">
+              <div class="rv d2"><b>Start the conversation</b><span>Share a few details and the kind of space you have in mind.</span></div>
+              <div class="rv d3"><b>Shape it together</b><span>We'll talk through collections, materials and finishes that suit your home.</span></div>
+              <div class="rv d4"><b>Create your space</b><span>Move forward at your pace, with guidance at every step.</span></div>
+            </div>
+          </div>
+
+          <div class="form-card rv d2">
+            <form id="enquiryForm" novalidate>
+              <h3>Project Enquiry</h3>
+              <p>Tell us a little about your project and we'll be in touch to discuss it.</p>
+              <div class="form-row">
+                <div class="field">
+                  <label for="fName">Your name <i>*</i></label>
+                  <input id="fName" name="name" type="text" autocomplete="name" required />
+                  <span class="err" role="alert">Please tell us your name.</span>
+                </div>
+                <div class="field">
+                  <label for="fPhone">Telephone</label>
+                  <input id="fPhone" name="phone" type="tel" autocomplete="tel" />
+                  <span class="err" role="alert">That telephone number doesn't look quite right.</span>
+                </div>
+              </div>
+              <div class="field">
+                <label for="fEmail">Email address <i>*</i></label>
+                <input id="fEmail" name="email" type="email" autocomplete="email" required />
+                <span class="err" role="alert">Please enter a valid email address, such as name@example.co.uk.</span>
+              </div>
+              <div class="field">
+                <label for="fCat">Project category <i>*</i></label>
+                <select id="fCat" name="category" required>
+                  <option value="">Select a category…</option>
+                  <option>Kitchen</option>
+                  <option>Bathroom</option>
+                  <option>Appliances</option>
+                  <option>Worktops</option>
+                  <option>Tiles &amp; Flooring</option>
+                  <option>Multiple / Not Sure Yet</option>
+                </select>
+                <span class="err" role="alert">Please choose the closest category for your project.</span>
+              </div>
+              <div class="field">
+                <label for="fMsg">About your project <i>*</i></label>
+                <textarea id="fMsg" name="message" required placeholder="Tell us about your space, your ideas, and your timescales…"></textarea>
+                <span class="err" role="alert">A few words about your project will help us respond well (at least 10 characters).</span>
+              </div>
+              <button class="btn btn-solid" type="submit">Start Your Project <span class="arr" aria-hidden="true">↗</span></button>
+              <p class="form-note">Prefer to talk first? Use the Contact option below and we'll take it from there.</p>
+            </form>
+            <div class="form-success" id="formSuccess" role="status" tabindex="-1">
+              <div class="tick" aria-hidden="true">✓</div>
+              <h4>Thank you — your enquiry is ready.</h4>
+              <p id="successText">Your project details have been prepared. Download a copy for your records, and the Ranveer team will be able to pick the conversation up from there.</p>
+              <button class="btn btn-brass" type="button" id="downloadEnquiry">Download Enquiry Summary <span class="arr" aria-hidden="true">↓</span></button>
+              <p class="form-note"><button type="button" id="sendAnother" style="background:none;border:0;color:inherit;text-decoration:underline;font-size:12.5px;padding:0">Send another enquiry</button></p>
+            </div>
+          </div>
+        </div>
+      </section>
+    </main>
+
+    <!-- ================= FOOTER ================= -->
+    <footer id="contact">
+      <div class="wrap">
+        <div class="foot-top">
+          <div class="foot-brand">
+            <div class="foot-logo">
+              <span class="logo-mark" aria-hidden="true"><span>R</span></span>
+              <span class="logo-word"><b>Ranveer</b><small>Kitchens · Bathrooms · Interiors</small></span>
+            </div>
+            <p>Kitchens, bathrooms, appliances, worktops, taps, tiles and flooring — thoughtfully selected for modern British living.</p>
+            <div class="socials">
+              <a href="https://www.instagram.com" target="_blank" rel="noopener" aria-label="Ranveer on Instagram"><svg viewBox="0 0 24 24" aria-hidden="true"><path d="M12 2.2c3.2 0 3.6 0 4.9.1 3.3.1 4.8 1.7 4.9 4.9.1 1.3.1 1.6.1 4.8s0 3.6-.1 4.8c-.1 3.2-1.7 4.8-4.9 4.9-1.3.1-1.6.1-4.9.1s-3.6 0-4.9-.1c-3.3-.1-4.8-1.7-4.9-4.9-.1-1.3-.1-1.6-.1-4.8s0-3.6.1-4.8C2.3 4 3.9 2.4 7.1 2.3c1.3-.1 1.7-.1 4.9-.1zM12 0C8.7 0 8.3 0 7.1.1 2.7.3.3 2.7.1 7.1 0 8.3 0 8.7 0 12s0 3.7.1 4.9c.2 4.4 2.6 6.8 7 7 1.2.1 1.6.1 4.9.1s3.7 0 4.9-.1c4.4-.2 6.8-2.6 7-7 .1-1.2.1-1.6.1-4.9s0-3.7-.1-4.9c-.2-4.4-2.6-6.8-7-7C15.7 0 15.3 0 12 0zm0 5.9A6.1 6.1 0 1 0 18.1 12 6.1 6.1 0 0 0 12 5.9zm0 10.1A4 4 0 1 1 16 12a4 4 0 0 1-4 4zm6.4-11.8a1.4 1.4 0 1 0 1.4 1.4 1.4 1.4 0 0 0-1.4-1.4z"/></svg></a>
+              <a href="https://www.pinterest.co.uk" target="_blank" rel="noopener" aria-label="Ranveer on Pinterest"><svg viewBox="0 0 24 24" aria-hidden="true"><path d="M12 0a12 12 0 0 0-3.8 23.4c-.1-.9-.2-2.4 0-3.4l1.2-5s-.3-.6-.3-1.5c0-1.4.8-2.4 1.8-2.4.9 0 1.3.6 1.3 1.4 0 .9-.6 2.2-.9 3.4-.2 1 .5 1.8 1.5 1.8 1.8 0 3.2-1.9 3.2-4.7 0-2.4-1.8-4.1-4.3-4.1a4.4 4.4 0 0 0-4.6 4.4c0 .9.3 1.8.8 2.3.1.1.1.2.1.3l-.3 1.1c0 .2-.2.2-.4.1-1.2-.6-2-2.4-2-3.9 0-3.2 2.3-6.1 6.7-6.1 3.5 0 6.2 2.5 6.2 5.8 0 3.5-2.2 6.3-5.3 6.3-1 0-2-.5-2.3-1.2l-.6 2.4c-.2.9-.8 2-1.3 2.6A12 12 0 1 0 12 0z"/></svg></a>
+              <a href="https://www.houzz.co.uk" target="_blank" rel="noopener" aria-label="Ranveer on Houzz"><svg viewBox="0 0 24 24" aria-hidden="true"><path d="M12 1.5 2.5 8v14.5h7V14h5v8.5h7V8z"/></svg></a>
+            </div>
+          </div>
+          <nav class="foot" aria-label="Collections">
+            <h4>Collections</h4>
+            <ul class="foot-links">
+              <li><a href="#kitchens">Kitchens</a></li>
+              <li><a href="#bathrooms">Bathrooms</a></li>
+              <li><a href="#appliances">Appliances</a></li>
+              <li><a href="#worktops">Worktops</a></li>
+              <li><a href="#tiles">Wall &amp; Floor Tiles</a></li>
+              <li><a href="#flooring">LVT Flooring</a></li>
+            </ul>
+          </nav>
+          <nav class="foot" aria-label="Explore">
+            <h4>Explore</h4>
+            <ul class="foot-links">
+              <li><a href="#approach">The Ranveer Approach</a></li>
+              <li><a href="#materials">Materials &amp; Finishes</a></li>
+              <li><a href="#inspiration">Inspiration</a></li>
+              <li><a href="#why">Why Ranveer</a></li>
+              <li><a href="#enquiry">Plan Your Space</a></li>
+            </ul>
+          </nav>
+          <div class="foot foot-contact">
+            <h4>Contact</h4>
+            <p>The quickest way to reach the Ranveer team is through our project enquiry form — tell us about your plans and we'll take it from there.</p>
+            <a class="text-link" href="#enquiry" style="color:#F6F3ED">Contact Our Team <span class="arr" aria-hidden="true">↗</span></a>
+          </div>
+        </div>
+
+        <div class="foot-word" aria-hidden="true">RAN<b>V</b>EER</div>
+
+        <div class="foot-bar">
+          <span>© <span id="year">2026</span> Ranveer. All rights reserved.</span>
+          <nav aria-label="Legal">
+            <button type="button" data-policy="privacy">Privacy Policy</button>
+            <button type="button" data-policy="terms">Terms &amp; Conditions</button>
+          </nav>
+          <button class="to-top" type="button" id="toTop">Back to Top <span class="arr" aria-hidden="true">↑</span></button>
+        </div>
+      </div>
+    </footer>
+
+    <dialog class="policy" id="policyDialog" aria-labelledby="policyTitle">
+      <div class="policy-in">
+        <h3 id="policyTitle">Privacy Policy</h3>
+        <div id="policyBody"></div>
+        <button class="btn btn-solid policy-close" type="button" id="policyClose">Close</button>
+      </div>
+    </dialog>
+
+    <script>
+    (function(){
+      "use strict";
+      var reduced = window.matchMedia("(prefers-reduced-motion: reduce)").matches;
+
+      /* Hero entrance */
+      function loaded(){ document.body.classList.add("loaded"); }
+      if (document.readyState === "complete") loaded();
+      else window.addEventListener("load", loaded);
+      setTimeout(loaded, 1200); /* never hold content hostage */
+
+      /* Sticky header state */
+      var head = document.getElementById("siteHead");
+      function onScroll(){ head.classList.toggle("scrolled", window.scrollY > 40); }
+      window.addEventListener("scroll", onScroll, { passive:true });
+      onScroll();
+
+      /* ---------- Mega menu ---------- */
+      var mega = document.getElementById("megaMenu");
+      var panels = mega.querySelectorAll(".mega-panel");
+      var megaBtns = document.querySelectorAll("[data-mega]");
+      var openKey = null, closeTimer = null, openVia = "", openTime = 0;
+
+      function showMega(key, via){
+        clearTimeout(closeTimer);
+        openKey = key; openVia = via || "click"; openTime = Date.now();
+        panels.forEach(function(p){ p.classList.toggle("active", p.getAttribute("data-panel") === key); });
+        megaBtns.forEach(function(b){ b.setAttribute("aria-expanded", b.getAttribute("data-mega") === key ? "true" : "false"); });
+        mega.classList.add("open");
+      }
+      function hideMega(delay){
+        clearTimeout(closeTimer);
+        closeTimer = setTimeout(function(){
+          openKey = null;
+          mega.classList.remove("open");
+          megaBtns.forEach(function(b){ b.setAttribute("aria-expanded","false"); });
+        }, delay || 0);
+      }
+      var canHover = window.matchMedia("(hover: hover)").matches;
+      megaBtns.forEach(function(btn){
+        var key = btn.getAttribute("data-mega");
+        if (canHover){
+          btn.addEventListener("mouseenter", function(){ showMega(key, "hover"); });
+          btn.addEventListener("mouseleave", function(){ hideMega(260); });
+        }
+        btn.addEventListener("focus", function(){ showMega(key, "focus"); });
+        btn.addEventListener("blur", function(){
+          setTimeout(function(){
+            if (!mega.contains(document.activeElement) && document.activeElement !== btn) hideMega(0);
+          }, 0);
+        });
+        btn.addEventListener("click", function(e){
+          e.preventDefault();
+          /* A tap fires mouseenter+click together: don't let the click undo the open. */
+          if (openKey === key && mega.classList.contains("open")){
+            if (openVia === "hover" && Date.now() - openTime < 600) return;
+            hideMega(0);
+          } else showMega(key, "click");
+        });
+      });
+      mega.addEventListener("mouseenter", function(){ clearTimeout(closeTimer); });
+      mega.addEventListener("mouseleave", function(){ hideMega(260); });
+      mega.addEventListener("focusout", function(){
+        setTimeout(function(){ if (!mega.contains(document.activeElement)) hideMega(0); }, 0);
+      });
+      document.addEventListener("keydown", function(e){
+        if (e.key === "Escape"){
+          hideMega(0);
+          closeOverlay(mobileMenu); closeOverlay(searchOverlay);
+          if (policyDialog.open) policyDialog.close();
+        }
+      });
+      document.addEventListener("click", function(e){
+        if (openKey && !mega.contains(e.target) && !e.target.closest("[data-mega]")) hideMega(0);
+      });
+
+      /* ---------- Overlays ---------- */
+      function openOverlay(el, focusEl){
+        el.classList.add("open");
+        document.body.style.overflow = "hidden";
+        if (focusEl) setTimeout(function(){ focusEl.focus(); }, 60);
+      }
+      function closeOverlay(el){
+        el.classList.remove("open");
+        document.body.style.overflow = "";
+      }
+      var mobileMenu = document.getElementById("mobileMenu");
+      var searchOverlay = document.getElementById("searchOverlay");
+      var menuOpenBtn = document.getElementById("menuOpen");
+      var searchInput = document.getElementById("searchInput");
+      menuOpenBtn.addEventListener("click", function(){
+        openOverlay(mobileMenu, document.getElementById("menuClose"));
+        menuOpenBtn.setAttribute("aria-expanded","true");
+      });
+      document.getElementById("menuClose").addEventListener("click", function(){
+        closeOverlay(mobileMenu); menuOpenBtn.setAttribute("aria-expanded","false"); menuOpenBtn.focus();
+      });
+      document.getElementById("searchOpen").addEventListener("click", function(){
+        openOverlay(searchOverlay, searchInput); renderSearch("");
+      });
+      document.getElementById("searchClose").addEventListener("click", function(){
+        closeOverlay(searchOverlay); document.getElementById("searchOpen").focus();
+      });
+      /* close overlays when a destination link is chosen */
+      document.querySelectorAll(".overlay a[href^='#']").forEach(function(a){
+        a.addEventListener("click", function(){ closeOverlay(mobileMenu); closeOverlay(searchOverlay); });
+      });
+
+      /* Mobile accordions */
+      document.querySelectorAll(".mnav-group > button.mnav-top").forEach(function(btn){
+        btn.addEventListener("click", function(){
+          var group = btn.parentElement;
+          var sub = group.querySelector(".mnav-sub");
+          var isOpen = group.classList.toggle("open");
+          btn.setAttribute("aria-expanded", isOpen ? "true" : "false");
+          sub.style.maxHeight = isOpen ? sub.scrollHeight + "px" : "0px";
+        });
+      });
+
+      /* ---------- Search ---------- */
+      var INDEX = [
+        { t:"Kitchens", c:"Collection", href:"#kitchens", k:"kitchen kitchens cabinetry shaker oak island cooking" },
+        { t:"Bathrooms", c:"Collection", href:"#bathrooms", k:"bathroom bathrooms bath shower ensuite suite spa" },
+        { t:"Appliances", c:"Collection", href:"#appliances", k:"appliance appliances cooker oven range hob fridge" },
+        { t:"Worktops", c:"Collection", href:"#worktops", k:"worktop worktops surface stone marble quartz granite counter" },
+        { t:"Wall & Floor Tiles", c:"Collection", href:"#tiles", k:"tile tiles wall floor ceramic porcelain backsplash" },
+        { t:"LVT Flooring", c:"Collection", href:"#flooring", k:"lvt flooring floor vinyl herringbone chevron plank" },
+        { t:"Taps & Brassware", c:"Materials", href:"#materials", k:"tap taps brass brushed brassware mixer faucet fitting" },
+        { t:"Materials & Finishes", c:"Showcase", href:"#materials", k:"material materials texture finish stone glaze" },
+        { t:"The Ranveer Approach", c:"About", href:"#approach", k:"about approach ranveer details considered coordinated" },
+        { t:"Inspiration Gallery", c:"Ideas", href:"#inspiration", k:"inspiration ideas gallery projects magazine" },
+        { t:"Why Ranveer", c:"About", href:"#why", k:"why ranveer values support practical design-led" },
+        { t:"Plan Your Project", c:"Enquiry", href:"#enquiry", k:"plan project enquiry contact quote start begin" }
+      ];
+      var resultsEl = document.getElementById("searchResults");
+      function renderSearch(q){
+        q = (q || "").trim().toLowerCase();
+        var hits = INDEX.filter(function(item){
+          return !q || item.t.toLowerCase().indexOf(q) > -1 || item.k.indexOf(q) > -1;
+        });
+        if (!hits.length){
+          resultsEl.innerHTML = '<p class="search-empty">Nothing matches “' + q.replace(/</g,"&lt;") + '” yet — try “kitchens”, “tiles” or “worktops”.</p>';
+          return;
+        }
+        resultsEl.innerHTML = hits.map(function(item){
+          return '<a href="' + item.href + '"><span class="r-t">' + item.t + '</span><span class="r-c">' + item.c + '</span></a>';
+        }).join("");
+        resultsEl.querySelectorAll("a").forEach(function(a){
+          a.addEventListener("click", function(){ closeOverlay(searchOverlay); });
+        });
+      }
+      searchInput.addEventListener("input", function(){ renderSearch(searchInput.value); });
+
+      /* ---------- Scroll reveals ---------- */
+      var rvEls = document.querySelectorAll(".rv, .rv-img");
+      if (reduced){
+        rvEls.forEach(function(el){ el.classList.add("in"); });
+      } else {
+        var pending = [];
+        rvEls.forEach(function(el){ pending.push(el); });
+        function revealEl(el){ el.classList.add("in"); }
+        if ("IntersectionObserver" in window){
+          var io = new IntersectionObserver(function(entries){
+            entries.forEach(function(en){
+              if (en.isIntersecting){ revealEl(en.target); io.unobserve(en.target); }
+            });
+          }, { threshold:.1, rootMargin:"0px 0px -4% 0px" });
+          pending.forEach(function(el){ io.observe(el); });
+        }
+        /* Rect-check fallback: guarantees content appears once reached,
+           even where IntersectionObserver is unavailable or throttled. */
+        var ticking = false;
+        function rectCheck(){
+          ticking = false;
+          pending = pending.filter(function(el){
+            if (el.classList.contains("in")) return false;
+            var r = el.getBoundingClientRect();
+            if (r.top < window.innerHeight * 1.02 && r.bottom > -40){ revealEl(el); if (io) io.unobserve(el); return false; }
+            return true;
+          });
+        }
+        function onScrollRv(){
+          if (!ticking){ ticking = true; requestAnimationFrame(rectCheck); }
+        }
+        window.addEventListener("scroll", onScrollRv, { passive:true });
+        window.addEventListener("resize", onScrollRv);
+        window.addEventListener("load", rectCheck);
+        setTimeout(rectCheck, 500);
+        setTimeout(rectCheck, 1800);
+      }
+
+      /* ---------- Materials rail ---------- */
+      var rail = document.getElementById("matRail");
+      var bar = document.getElementById("matBar");
+      var prev = document.getElementById("matPrev");
+      var next = document.getElementById("matNext");
+      function railStep(){
+        var card = rail.querySelector(".mat-card");
+        return card ? card.getBoundingClientRect().width + 24 : 420;
+      }
+      function railUpdate(){
+        var max = rail.scrollWidth - rail.clientWidth;
+        var p = max > 0 ? rail.scrollLeft / max : 0;
+        bar.style.width = (12 + p * 88) + "%";
+        prev.disabled = rail.scrollLeft <= 4;
+        next.disabled = rail.scrollLeft >= max - 4;
+      }
+      prev.addEventListener("click", function(){ rail.scrollBy({ left:-railStep(), behavior: reduced ? "auto" : "smooth" }); });
+      next.addEventListener("click", function(){ rail.scrollBy({ left: railStep(), behavior: reduced ? "auto" : "smooth" }); });
+      rail.addEventListener("scroll", railUpdate, { passive:true });
+      window.addEventListener("resize", railUpdate);
+      railUpdate();
+
+      /* ---------- Category preselect ---------- */
+      var catSelect = document.getElementById("fCat");
+      document.querySelectorAll("[data-cat]").forEach(function(link){
+        link.addEventListener("click", function(){
+          var val = link.getAttribute("data-cat");
+          for (var i = 0; i < catSelect.options.length; i++){
+            if (catSelect.options[i].text.replace(/\s+/g," ").trim() === val.replace(/&amp;/g,"&")){
+              catSelect.selectedIndex = i; break;
+            }
+          }
+        });
+      });
+
+      /* ---------- Enquiry form ---------- */
+      var form = document.getElementById("enquiryForm");
+      var success = document.getElementById("formSuccess");
+      var lastEnquiry = null;
+      function setInvalid(input, bad){
+        input.closest(".field").classList.toggle("invalid", bad);
+        input.setAttribute("aria-invalid", bad ? "true" : "false");
+        return !bad;
+      }
+      function validate(){
+        var ok = true;
+        var name = document.getElementById("fName");
+        var email = document.getElementById("fEmail");
+        var phone = document.getElementById("fPhone");
+        var msg = document.getElementById("fMsg");
+        ok = setInvalid(name, !name.value.trim()) && ok;
+        ok = setInvalid(email, !/^[^\s@]+@[^\s@]+\.[^\s@]{2,}$/.test(email.value.trim())) && ok;
+        ok = setInvalid(phone, phone.value.trim() !== "" && !/^[+()\-.\s\d]{7,18}$/.test(phone.value.trim())) && ok;
+        ok = setInvalid(catSelect, !catSelect.value) && ok;
+        ok = setInvalid(msg, msg.value.trim().length < 10) && ok;
+        return ok;
+      }
+      ["fName","fEmail","fPhone","fCat","fMsg"].forEach(function(id){
+        var el = document.getElementById(id);
+        el.addEventListener("input", function(){ setInvalid(el, false); });
+        el.addEventListener("change", function(){ setInvalid(el, false); });
+      });
+      form.addEventListener("submit", function(e){
+        e.preventDefault();
+        if (!validate()){
+          var firstBad = form.querySelector(".field.invalid input, .field.invalid select, .field.invalid textarea");
+          if (firstBad) firstBad.focus();
+          return;
+        }
+        lastEnquiry = {
+          name: document.getElementById("fName").value.trim(),
+          email: document.getElementById("fEmail").value.trim(),
+          phone: document.getElementById("fPhone").value.trim(),
+          category: catSelect.value,
+          message: document.getElementById("fMsg").value.trim(),
+          date: new Date().toLocaleDateString("en-GB", { day:"numeric", month:"long", year:"numeric" })
+        };
+        document.getElementById("successText").textContent =
+          "Thank you, " + lastEnquiry.name.split(" ")[0] + " — your " + lastEnquiry.category.toLowerCase() +
+          " enquiry has been prepared. Download a copy for your records, and the Ranveer team will be able to pick the conversation up from there.";
+        form.style.display = "none";
+        success.classList.add("show");
+        success.focus();
+      });
+      document.getElementById("downloadEnquiry").addEventListener("click", function(){
+        if (!lastEnquiry) return;
+        var text =
+          "RANVEER — PROJECT ENQUIRY\n" +
+          "--------------------------\n" +
+          "Date:     " + lastEnquiry.date + "\n" +
+          "Name:     " + lastEnquiry.name + "\n" +
+          "Email:    " + lastEnquiry.email + "\n" +
+          "Phone:    " + (lastEnquiry.phone || "—") + "\n" +
+          "Category: " + lastEnquiry.category + "\n\n" +
+          "About the project:\n" + lastEnquiry.message + "\n";
+        var blob = new Blob([text], { type:"text/plain;charset=utf-8" });
+        var url = URL.createObjectURL(blob);
+        var a = document.createElement("a");
+        a.href = url; a.download = "Ranveer-project-enquiry.txt";
+        document.body.appendChild(a); a.click(); a.remove();
+        setTimeout(function(){ URL.revokeObjectURL(url); }, 800);
+      });
+      document.getElementById("sendAnother").addEventListener("click", function(){
+        form.reset();
+        form.style.display = "";
+        success.classList.remove("show");
+        document.getElementById("fName").focus();
+      });
+
+      /* ---------- Policy dialog ---------- */
+      var policyDialog = document.getElementById("policyDialog");
+      var policyTitle = document.getElementById("policyTitle");
+      var policyBody = document.getElementById("policyBody");
+      var POLICIES = {
+        privacy: {
+          title: "Privacy Policy",
+          body: "<p>Ranveer respects your privacy. Personal details shared through this website — such as your name, contact information and project notes — are used only to respond to your enquiry and discuss your project with you.</p><p>We never sell your information. You may ask us at any time what details we hold about you, and request their correction or removal, by contacting the team through the enquiry form.</p><p><em>This is placeholder policy wording for this website concept and will be replaced with Ranveer's final published policy before launch.</em></p>"
+        },
+        terms: {
+          title: "Terms & Conditions",
+          body: "<p>The content of this website is provided for general guidance on the collections and services offered by Ranveer. Product ranges, finishes and availability may change, and photography is shown for inspiration.</p><p>Nothing on this website forms a contract. Any project quotation will be confirmed in writing following a discussion of your requirements.</p><p><em>This is placeholder terms wording for this website concept and will be replaced with Ranveer's final published terms before launch.</em></p>"
+        }
+      };
+      document.querySelectorAll("[data-policy]").forEach(function(btn){
+        btn.addEventListener("click", function(){
+          var p = POLICIES[btn.getAttribute("data-policy")];
+          policyTitle.textContent = p.title;
+          policyBody.innerHTML = p.body;
+          policyDialog.showModal();
+        });
+      });
+      document.getElementById("policyClose").addEventListener("click", function(){ policyDialog.close(); });
+      policyDialog.addEventListener("click", function(e){
+        var r = policyDialog.getBoundingClientRect();
+        if (e.clientX < r.left || e.clientX > r.right || e.clientY < r.top || e.clientY > r.bottom) policyDialog.close();
+      });
+
+      /* ---------- Footer bits ---------- */
+      document.getElementById("year").textContent = new Date().getFullYear();
+      document.getElementById("toTop").addEventListener("click", function(){
+        window.scrollTo({ top:0, behavior: reduced ? "auto" : "smooth" });
+      });
+    })();
+    </script>
+  </body>
+</html>
