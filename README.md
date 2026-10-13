@@ -3,6 +3,6 @@
 Luxury interiors website concept (static site): kitchens, bathrooms, appliances, worktops, tiles & LVT flooring.
 
 - `index.html` — the complete website
-- `assets/` — optimized interiors photography
+- `assets/` — optimized interiors photography (19 images)
 
-Deploy to any static host: Vercel, Netlify, or GitHub Pages.
+Deploys automatically to Vercel on push to main.
