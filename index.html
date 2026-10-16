@@ -1519,5 +1519,24 @@
       });
     })();
     </script>
-  </body>
+  <script>
+(function(){
+  var imgs = document.querySelectorAll('img[src*="assets/img-"]');
+  var map = {};
+  imgs.forEach(function(img){
+    var m = img.src.match(/img-(\d+)\.jpg/);
+    if (m) {
+      var key = 'img-' + m[1];
+      (map[key] = map[key] || []).push(img);
+    }
+  });
+  Object.keys(map).forEach(function(key){
+    fetch('assets-b64/' + key + '.jpg.b64').then(function(r){ return r.text(); }).then(function(b64){
+      var uri = 'data:image/jpeg;base64,' + b64.trim();
+      map[key].forEach(function(img){ img.src = uri; });
+    }).catch(function(){});
+  });
+})();
+</script>
+</body>
 </html>
